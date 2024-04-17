@@ -6,18 +6,23 @@
     <link th:href="@{/css/style.css}" rel="stylesheet">
 </head>
 <body>
+
 <h1 class="center">Мультсериал "Рик и Морти"</h1>
 <p class="center"><img th:src="@{/css/logo.jpg}" alt="Лого"/></p>
 <h2 class="center">Все персонажи:</h2>
+<span><b>Отсортировать по:</b></span>&nbsp;
+<a href="../../characters/sortedbyname" class="button2">имя (a-z)</a>&nbsp;&nbsp;&nbsp;
+<a href="../../characters/sortedbygender" class="button2">пол (ж-м)</a>&nbsp;&nbsp;&nbsp;
+<a href="../../characters" class="button2">id</a>
 
 <div class="content">
     <tr th:each="c: ${characters}">
         <div class="item">
             <img th:src="${c.image}" alt="Изображение отсутствует"/>
             <div class="item-info">
+                <h3 th:text="${c.id}"></h3>
                 <h3 th:text="${c.name}"></h3>
-                <span class="status" th:text="${c.status}"></span>
-                <a href=href="@{characters/{id}(id=${c.id})}" class="button">Выбрать</a>
+                <a th:href="@{../../character/{id}(id=${c.id})}" class="button">Выбрать</a>
             </div>
         </div>
     </tr>

@@ -8,6 +8,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 public class SpringHomework6Application {
+
 	@Bean
 	public RestTemplate template() {
 		return new RestTemplate();
