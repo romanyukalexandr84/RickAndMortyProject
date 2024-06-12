@@ -8,7 +8,7 @@
 
 Для начала работы необходимо запустить файл приложения SpringHomework6Application
 
-###### Проект запускается по адресу http://localhost:8080/characters
+Проект запускается по адресу http://localhost:8080/characters
 ####
 #### Скриншоты:
 
