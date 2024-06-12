@@ -10,7 +10,7 @@
 
 ###### Проект запускается по адресу http://localhost:8080/characters
 ####
-###### Скриншоты:
+#### Скриншоты:
 
 ![Screenshot16.png](https://raw.githubusercontent.com/romanyukalexandr84/Images/main/Screenshot16.png)
 
